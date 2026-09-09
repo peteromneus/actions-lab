@@ -1,0 +1,21 @@
+name: At push
+on:
+    push:
+        branches: [ main ]
+
+jobs:
+    look:
+        runs-on: ubuntu-latest
+        steps:
+            - name: What files are here?
+              run: ls -la
+
+            - name: Fetch the code
+              uses: actions/checkout@v4
+
+            - name: What files are here now?
+              run: la -la
+
+            - name: Who did this?
+              run: echo "${{ github.actor }} pushed to ${{ github.repository }}"
+              
