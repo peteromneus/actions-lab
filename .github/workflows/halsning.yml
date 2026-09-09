@@ -18,10 +18,10 @@ jobs:
               if: ${{ !inputs.hogljutt }}
               env:
                 NAMN: ${{ inputs.namn }}
-              run: echo "Hej $NAMN!"
+              run: echo "Hej, $NAMN!"
               
             - name: Skrik
               if: ${{ inputs.hogljutt }}
               env:
                 NAMN: ${{ inputs.namn }}
-              run: echo "HEJ $NAMN!!!" | tr '[:lower:]' '[:upper:]'
+              run: echo "HEJ, $NAMN!!!" | tr '[:lower:]' '[:upper:]'
