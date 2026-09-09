@@ -1,3 +1,1 @@
-# actions-lab
-
-## All done!
+# Nothing to see here!
